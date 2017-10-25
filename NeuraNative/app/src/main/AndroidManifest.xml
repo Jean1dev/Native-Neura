@@ -1,0 +1,28 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="anative.jean.com.br.neuranative">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/laucher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/laucher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name="anative.jean.com.br.neuranative.SplashArtIntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="anative.jean.com.br.neuranative.PrincipialActivity" />
+        <activity android:name="anative.jean.com.br.neuranative.FaxinaActivity" />
+        <activity android:name="anative.jean.com.br.neuranative.MainActivity"></activity>
+    </application>
+
+
+</manifest>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="anative.jean.com.br.neuranative.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/fundo2" />
+
+    <LinearLayout
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_marginTop="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logo_branca" />
+
+        <TextView
+            android:textColor="@color/colorFont"
+            android:text="Precisando Fazer aquela faxina na sua casa?
+                            A Neura cuida disso"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:fontFamily="casual"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/txt_login"
+            android:layout_width="270dp"
+            android:fontFamily="casual"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/layout_text"
+            android:ems="10"
+            android:hint="nome"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txt_tel"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/layout_text"
+            android:ems="10"
+            android:fontFamily="casual"
+            android:hint="telefone"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/btn_"
+            android:layout_width="258dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/layout_button"
+            android:fontFamily="casual"
+            android:textColor="@color/colorFont"
+            android:text="Enviar" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabSize="mini"
+            android:layout_gravity="right"
+            android:baselineAlignBottom="true"
+            app:srcCompat="@android:drawable/ic_menu_help" />
+
+
+    </LinearLayout>
+</RelativeLayout>

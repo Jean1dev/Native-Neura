@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="anative.jean.com.br.neuranative.FaxinaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:paddingBottom="25dp"
+        android:gravity="center"
+        android:background="#FFF"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"/>
+
+
+        <EditText
+            android:id="@+id/telefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Seu telefone"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/txt_banheiro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="quantos banheiros tem sua casa"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/txt_quarto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="quantos quartos tem sua casa"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btn_solicitar"
+            android:layout_width="296dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:background="@android:drawable/toast_frame"
+            android:elevation="13dp"
+            android:text="Solicitar"
+            android:textColor="@color/colorFont" />
+
+    </LinearLayout>
+
+</RelativeLayout>
