@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         sobre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getBaseContext(), PrincipialActivity.class);
+                Intent intent = new Intent(getBaseContext(), NavigationDrawerActivity.class);
                 startActivity(intent);
             }
         });
@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
         entrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                entrar.setEnabled(false);
                 nome = (EditText) findViewById(R.id.txt_login);
                 telefone = (EditText) findViewById(R.id.txt_tel);
 
