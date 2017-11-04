@@ -18,7 +18,7 @@ public class SplashArtIntroActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent it = new Intent(getBaseContext(), MainActivity.class);
+                Intent it = new Intent(getBaseContext(), ChoseActivity.class);
                 startActivity(it);
                 finish();
             }

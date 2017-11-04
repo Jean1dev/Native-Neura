@@ -76,16 +76,6 @@
             android:textColor="@color/colorFont"
             android:text="Enviar" />
 
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/floatingActionButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:clickable="true"
-            app:fabSize="mini"
-            android:layout_gravity="right"
-            android:baselineAlignBottom="true"
-            app:srcCompat="@android:drawable/ic_menu_help" />
-
 
     </LinearLayout>
 </RelativeLayout>

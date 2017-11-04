@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-*/
+
 
         sobre = (FloatingActionButton) findViewById(R.id.floatingActionButton);
         sobre.setOnClickListener(new View.OnClickListener() {
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(getBaseContext(), NavigationDrawerActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
 
         final AlertDialog.Builder alert = new AlertDialog.Builder(this);
@@ -73,12 +73,12 @@ public class MainActivity extends AppCompatActivity {
 
                 if (nome.getText().toString().equals("")) {
                     Toast.makeText(MainActivity.this, "Ops, voce não colocou o nome", Toast.LENGTH_SHORT).show();
-                    nome.setError("aki :)");
+                    nome.setError("aqui :)");
                     nome.requestFocus();
 
                 } else if (telefone.getText().toString().equals("")) {
                     Toast.makeText(MainActivity.this, "Ops, voce não colocou o telefone", Toast.LENGTH_SHORT).show();
-                    telefone.setError("aki :)");
+                    telefone.setError("aqui :)");
                     telefone.requestFocus();
 
                 } else {
@@ -92,8 +92,8 @@ public class MainActivity extends AppCompatActivity {
                         //String URL = "http://neuraapi-net.umbler.net/methods/insert_cliente.php";
 
                         //*************************** AKI VAI PRA CLASSE AUXILIAR ATE EU RESOLVE ESSE PACOTE ION
-                        ClasseAuxiliar classeAuxiliar = new ClasseAuxiliar();
-                        classeAuxiliar.requireGET(nome_final, telefone_final);
+                        //ClasseAuxiliar classeAuxiliar = new ClasseAuxiliar();
+                        //classeAuxiliar.requireGET(nome_final, telefone_final);
                         //classeAuxiliar.insertClienteRemoto(nome_final, telefone_final);
 
                         Ion.with(getBaseContext())
@@ -115,8 +115,8 @@ public class MainActivity extends AppCompatActivity {
                                             }
                                         });
                                         alert.create().show();
-
-                          /*              if (result.get("retorno").getAsString().equals("YES")) {
+/*
+                                        if (result.get("retorno").getAsString().equals("YES")) {
                                             System.out.println("********** FOI PORRRAAAAAAAAAAAAAAAAAAA");
                                             System.out.println(nome_final);
                                             System.out.println(telefone_final);
@@ -132,9 +132,9 @@ public class MainActivity extends AppCompatActivity {
                                             });
                                             alert.create().show();
                                         } else {
-                                            Toast.makeText(MainActivity.this, "Algo de errado ocorreu", Toast.LENGTH_SHORT).show();
-                                        }*/
-
+                                            Toast.makeText(MainActivity.this, "Desculpe não conseguimos enviar, verifique sua internet", Toast.LENGTH_SHORT).show();
+                                        }
+*/
                                     }
 
                                 });
