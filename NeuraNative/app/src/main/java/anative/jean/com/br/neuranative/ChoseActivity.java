@@ -22,7 +22,8 @@ public class ChoseActivity extends AppCompatActivity {
         diarista.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(ChoseActivity.this, "diarista", Toast.LENGTH_SHORT).show();
+                Intent it = new Intent(getBaseContext(), CadastroActivity.class);
+                startActivity(it);
             }
         });
 
